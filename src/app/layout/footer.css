@@ -1,0 +1,9 @@
+.footer-bottom {
+    background-color: #171d36;
+    padding: 25px 0;
+    color: #c6cffa;
+    font-size: 14px;
+    border-top: 1px solid hsla(0,0%,100%,.05);
+    text-transform: capitalize!important;
+    text-align: -webkit-center;
+}

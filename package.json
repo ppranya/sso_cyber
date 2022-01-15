@@ -1,0 +1,57 @@
+{
+  "name": "cyber-user",
+  "version": "0.1.0",
+  "homepage": "/",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "^2.11.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/style": "^0.8.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/lab": "^5.0.0-alpha.53",
+    "@mui/material": "^5.0.4",
+    "@reduxjs/toolkit": "^1.6.2",
+    "query-string": "^7.1.0",
+    "react": "^17.0.2",
+    "react-animated-slider": "^2.0.0",
+    "react-contenteditable": "^3.3.6",
+    "react-countup": "^6.0.0",
+    "react-dom": "^17.0.2",
+    "react-google-button": "^0.7.2",
+    "react-idle-timer": "^4.6.4",
+    "react-redux": "^7.2.5",
+    "react-rev-slider": "^1.0.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^4.0.3"
+  },
+  "scripts": {
+    "postinstall": "cd api && npm install",
+    "dev": "concurrently \"npm run dev --prefix api\" \"npm run ui\"",
+    "start": "concurrently \"npm run api\" \"npm run ui\"",
+    "ui": "cross-env HTTPS=true react-scripts start",
+    "api": "npm start --prefix api",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "concurrently": "^5.1.0"
+  }
+}
